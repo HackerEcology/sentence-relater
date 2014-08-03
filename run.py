@@ -8,7 +8,8 @@
 import sys
 import datetime
 
-from app import app, verySimpleModelMikolov
+from app import app, \
+    verySimpleModelMikolov
 
 from flask import Flask, \
     Response, \
@@ -17,12 +18,6 @@ from flask import Flask, \
     request, \
     redirect
 
-from config import \
-    HOST, \
-    PORT, \
-    DEBUG,\
-    TEMPLATE_CONFIGURATION, \
-
 @app.route('/')
 def index():
     """
@@ -30,7 +25,7 @@ def index():
     """
     return Response("Hello! Welcome to SuggestU.")
 
-@app.route('/<s1>/<s2>')
+@app.route('/<s1>/<s2>/')
 def relater(s1=None, s2=None):
     """
     API path
@@ -40,8 +35,8 @@ def relater(s1=None, s2=None):
 
 if __name__ == '__main__':
     try:
-        app.run(host = HOST,
-                port = PORT,
-                debug = DEBUG)
+        app.run(host = app.config['HOST'],
+                port = app.config['PORT'],
+                debug = app.config['DEBUG'])
     except:
         raise

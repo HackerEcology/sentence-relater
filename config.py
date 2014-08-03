@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Statement for enabling the development environment
-DEBUG = True
+DEBUG = False #True
 
 # Define the application directory
 import os
@@ -48,4 +48,4 @@ TEMPLATE_CONFIGURATION = {
 HOST = "0.0.0.0"
 
 # The port to run the application from
-PORT = 80
+PORT = 5000
