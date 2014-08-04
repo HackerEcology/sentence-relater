@@ -1,3 +1,4 @@
 #!/bin/bash
 COMMAND="python run.py"
+# COMMAND="sudo python run.py"
 $COMMAND

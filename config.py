@@ -1,12 +1,23 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+##########################
+# Web Application settings
+##########################
+
+# The host IP to run the application from
+#HOST = "127.0.0.1"
+HOST = "0.0.0.0"
+
+# The port to run the application from
+PORT = 5000
+
 # Statement for enabling the development environment
 DEBUG = False #True
 
-# Define the application directory
-import os
-BASE_DIR = os.path.abspath(os.path.dirname(__file__))  
+# # Define the application directory
+# import os
+# BASE_DIR = os.path.abspath(os.path.dirname(__file__))  
 
 # Application threads. A common general assumption is
 # using 2 per available processor cores - to handle
@@ -28,24 +39,12 @@ SECRET_KEY = "#$FSDFSETE^^AUEFV#$%$&"
 # Template settings
 ###################
 
-# Dictionary that holds all the template configuration
-TEMPLATE_CONFIGURATION = {
+# # Dictionary that holds all the template configuration
+# TEMPLATE_CONFIGURATION = {
 
-    # The title of the application as shown by the browser
-    "title" : "SuggestU sentence relater API",
-
-    # # Define the category and subcategory font-weifht CSS attribute [normal|bold]
-    # "category_font_weight" : "normal",
-    # "subcategory_font_weight" : "normal",
-}
-
-##########################
-# Web Application settings
-##########################
-
-# The host IP to run the application from
-#HOST = "127.0.0.1"
-HOST = "0.0.0.0"
-
-# The port to run the application from
-PORT = 5000
+#     # The title of the application as shown by the browser
+#     "title" : "SuggestU sentence relater API",
+#     # # Define the category and subcategory font-weifht CSS attribute [normal|bold]
+#     # "category_font_weight" : "normal",
+#     # "subcategory_font_weight" : "normal",
+# }
