@@ -1,0 +1,8 @@
+# install python-dev
+# install gfortran
+# install BLAS libraries
+Flask
+numpy
+pandas
+scipy
+gensim
