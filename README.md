@@ -3,7 +3,9 @@ sentence-relater
 
 SuggestU's sentence-relater API
 
-For Demo, [click here](http://suggestu.cloudapp.net/animal%20loves%20milk/a%20cat/)
+- For Demo, [click here](http://suggestu.cloudapp.net/animal%20loves%20milk/a%20cat/)
+- Sample URLs: 
+  	 - http://localhost:5000/i%20like%20music/i%20hate%20songs/
 
 ***
 

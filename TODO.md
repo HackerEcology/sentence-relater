@@ -1,0 +1,3 @@
+- [ ] Build new vector space
+- [ ] Use stemming, so as to avoid plurals, etc..
+- [ ] Strip punctuations OR include a way to parse them for extracting meaning.
