@@ -23,7 +23,9 @@ def index():
     """
     Landing Page: contains links to login portals.
     """
-    return Response("Hello! Welcome to SuggestU.")
+    tmp = "Hello! Welcome to SuggestU. Try this URL:\n" + \
+          "http://0.0.0.0:5000/cat loves milk/cat is an animal/"
+    return Response(tmp)
 
 @app.route('/<s1>/<s2>/')
 def relater(s1=None, s2=None):

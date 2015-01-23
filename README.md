@@ -11,13 +11,15 @@ SuggestU's sentence-relater API
 
 ###DEPLOYMENT NOTES
 
+- Export env var 'GoogleNews-vectors-negative300.bin' as BINARY_PATH
+
 - For production server, ensure that:
 
   1. In config.py: ```PORT = 80``` OR whatever you want it to be.
   2. In config.py: ```DEBUG = False``` (to prevent 'restart with reloading')
   3. (Optionally) In ./start: ```COMMAND="sudo python run.py"``` is not commented out.
      (in case you decide to run it on port 80)
-  
+       
   Tip: Use ```$ nohup ./start``` for a quick deployment. And change your secret/CSRF keys.
 
 - For Development server (Recommended: Skip step-2), ensure that:
